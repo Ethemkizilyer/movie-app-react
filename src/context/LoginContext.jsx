@@ -12,7 +12,7 @@ export const LoginContext = createContext();
 
 const LoginProvider = ({ children }) => {
  const [currentUser, setCurrentUser] = useState();
- const [navi, setNavi] = useState("ethem");
+ const [navi, setNavi] = useState("");
 
    useEffect(() => {
      userObserver(setCurrentUser);
