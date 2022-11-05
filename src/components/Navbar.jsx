@@ -12,7 +12,7 @@ const Navbar = () => {
    const [dfg,setDfg] = useState(JSON.parse(localStorage.getItem("test")));
   return (
     <div className="bg-slate-300 w-full h-20 text-3xl font-bold flex items-center justify-between px-6">
-      <Link to="/">NAVBAR</Link>
+      <Link to="/">MOVIE APP</Link>
       <div className=" flex gap-x-8">
         {currentUser ? (
           <h5 className="mb-0 text-capitalize">{navi}</h5>
