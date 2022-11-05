@@ -11,9 +11,9 @@ const MovieDetail = ({item}) => {
   // const { id } = useParams();
   //   console.log(id)
 
-    const ert=()=>{
-        navigate("/")
-    }
+    // const ert=()=>{
+    //     navigate("/")
+    // }
   return (
     <div className="flex flex-col gap-3 ">
       <h1 className="text-center text-3xl font-bold">{location.state?.title}</h1>

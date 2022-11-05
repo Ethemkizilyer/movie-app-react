@@ -9,8 +9,8 @@ const Main = () => {
   const [bakar, setBakar] = useState([]);
   const [inpu, setInpu] = useState("");
 
-const dfg = JSON.parse(localStorage.getItem("test"));
-  const { user, setUser } = useContext(LoginContext);
+// const dfg = JSON.parse(localStorage.getItem("test"));
+  // const { user, setUser } = useContext(LoginContext);
   const { currentUser } = useContext(LoginContext);
   const navigate = useNavigate();
 

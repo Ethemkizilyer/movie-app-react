@@ -20,9 +20,9 @@ const [loginEmail, setLoginEmail] = useState("");
 const [loginPassword, setLoginPassword] = useState("");
 
 
-     const { user, setUser } = useContext(LoginContext);
-     const [eth,setEth]= useState({name:"",email:"",password:""})
-const dfg= JSON.parse(localStorage.getItem("test"))
+    //  const { user, setUser } = useContext(LoginContext);
+    //  const [eth,setEth]= useState({name:"",email:"",password:""})
+// const dfg= JSON.parse(localStorage.getItem("test"))
       const navigate = useNavigate();
 
       // const handleSubmit = (e) => {
@@ -47,7 +47,7 @@ const dfg= JSON.parse(localStorage.getItem("test"))
             loginPassword
           );
            navigate(-1);
-          console.log(user);
+          alert(`Hoş geldiniz Sn. ${auth?.currentUser?.displayName}`);
         } catch (error) {
           console.log(error.message);
         }
@@ -63,10 +63,10 @@ const dfg= JSON.parse(localStorage.getItem("test"))
        
       // }, []);
 
-        const signInWithGoo = () => {
-          signInWithGoogle();
-        };
-
+      const signInWithGoo = () => {
+        navigate("/");
+        return signInWithGoogle();
+      };
   return (
     <div className="flex flex-col justify-center items-center block p-6 rounded-lg shadow-lg bg-white w-full ">
       <div className="flex flex-col justify-center block p-6 rounded-lg shadow-lg bg-white max-w-sm w-full ">

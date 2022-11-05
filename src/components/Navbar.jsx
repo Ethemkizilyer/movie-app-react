@@ -9,7 +9,7 @@ const Navbar = () => {
   const { navi } = useContext(LoginContext);
   console.log(navi);
    const { currentUser} = useContext(LoginContext);
-   const [dfg,setDfg] = useState(JSON.parse(localStorage.getItem("test")));
+  //  const [dfg,setDfg] = useState(JSON.parse(localStorage.getItem("test")));
   return (
     <div className="bg-slate-300 w-full h-20 text-3xl font-bold flex items-center justify-between px-6">
       <Link to="/">MOVIE APP</Link>

@@ -34,10 +34,10 @@ export const createUser = async (email, password, displayName) => {
     await updateProfile(auth.currentUser, {
       displayName: displayName,
     });
-
+alert(`Hoş geldiniz Sn. ${displayName}`);
     console.log(user);
   } catch (err) {
-    alert(err.message);
+       alert("Eksik Giriş!!!");
   }
 };
 
@@ -58,7 +58,7 @@ export const signIn = async (email, password, navigate) => {
 
 export const logOut = () => {
   signOut(auth);
-  alert("ÇIKIŞ");
+    alert("İşin rast gelsin!!!");
 };
 
 export const userObserver = (setCurrentUser) => {
