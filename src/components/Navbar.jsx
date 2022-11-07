@@ -15,7 +15,7 @@ const Navbar = () => {
       <Link to="/">MOVIE APP</Link>
       <div className=" flex gap-x-8">
         {currentUser ? (
-          <h5 className="mb-0 text-capitalize">{currentUser?.displayName}</h5>
+          <h5 className="mb-0 text-capitalize">{currentUser?.displayName || navi}</h5>
         ) : (
           <Link className="nav-link" to="/login">
             Login
