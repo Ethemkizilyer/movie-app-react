@@ -33,7 +33,7 @@ console.log(navi)
   return (
     <div className="flex flex-col justify-center items-center block p-6 rounded-lg shadow-lg bg-white w-full ">
       <div className="flex flex-col justify-center block p-6 rounded-lg shadow-lg bg-white max-w-sm w-full ">
-        <form onSubmit={(e) => handleSubmit(e)}>
+        <form onSubmit={handleSubmit}>
           <div className="form-group mb-6">
             <label
               htmlFor="exampleInputName2"

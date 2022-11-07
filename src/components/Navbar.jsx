@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useContext } from "react";
 import { LoginContext } from "../context/LoginContext";
 import { logOut } from "../context/firebase-config";
@@ -8,10 +8,12 @@ import { logOut } from "../context/firebase-config";
 const Navbar = () => {
   const { navi } = useContext(LoginContext);
   console.log(navi);
+const navigate=  useNavigate()
    const { currentUser} = useContext(LoginContext);
   //  const [dfg,setDfg] = useState(JSON.parse(localStorage.getItem("test")));
   return (
     <div className="bg-slate-300 w-full h-20 text-3xl font-bold flex items-center justify-between px-6">
+      <a onClick={()=> navigate("/register")}>ETHEM</a>
       <Link to="/">MOVIE APP</Link>
       <div className=" flex gap-x-8">
         {currentUser ? (
