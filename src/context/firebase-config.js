@@ -37,7 +37,7 @@ export const createUser = async (email, password, displayName) => {
 alert(`Hoş geldiniz Sn. ${displayName}`);
     console.log(user);
   } catch (err) {
-       alert("Eksik Giriş!!!");
+       alert(err.message);
   }
 };
 
