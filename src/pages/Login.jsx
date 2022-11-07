@@ -48,8 +48,8 @@ const [loginPassword, setLoginPassword] = useState("");
           );
            navigate(-1);
           alert(`Hoş geldiniz Sn. ${auth?.currentUser?.displayName}`);
-        } catch (error) {
-          console.log(error.message);
+        } catch (err) {
+          alert(err.message);
         }
       };
 
