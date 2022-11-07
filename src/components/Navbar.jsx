@@ -15,14 +15,14 @@ const Navbar = () => {
       <Link to="/">MOVIE APP</Link>
       <div className=" flex gap-x-8">
         {currentUser ? (
-          <h5 className="mb-0 text-capitalize">{navi}</h5>
+          <h5 className="mb-0 text-capitalize">{currentUser?.displayName}</h5>
         ) : (
           <Link className="nav-link" to="/login">
             Login
           </Link>
         )}
         {currentUser ? (
-          <button className="nav-link" onClick={()=>logOut()}>
+          <button className="nav-link" onClick={() => logOut()}>
             Logout
           </button>
         ) : (
