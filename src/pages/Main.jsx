@@ -32,12 +32,13 @@ const Main = () => {
     // setInpu("");
   };
   const parçala = async () => {
+    const API_KEY = process.env.REACT_APP_TMD_KEY;
     const {
       data: { results },
     } = await axios(
       `https://api.themoviedb.org/3/${
         inpu == "" ? "discover" : "search"
-      }/movie?api_key=d37aa81d99fd5b49201922d61ad5b2fd&query=${inpu}`
+      }/movie?api_key=${API_KEY}&query=${inpu}`
     );
     setBakar(results);
 

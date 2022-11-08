@@ -13,7 +13,7 @@ const navigate=  useNavigate()
   //  const [dfg,setDfg] = useState(JSON.parse(localStorage.getItem("test")));
   return (
     <div className="bg-slate-300 w-full h-20 text-3xl font-bold flex items-center justify-between px-6">
-      <a onClick={()=> navigate("/register")}>ETHEM</a>
+      {/* <a onClick={()=> navigate("/register")}>ETHEM</a> */}
       <Link to="/">MOVIE APP</Link>
       <div className=" flex gap-x-8">
         {currentUser ? (
